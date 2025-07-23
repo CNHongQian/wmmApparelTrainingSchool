@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>未命名服装培训学校 - 专业服装设计与制作培训</title>
+    <meta name="description" content="未命名服装培训学校位于广州市中心，提供专业的服装设计、制版与工艺培训，小班教学，高就业率。">
+    <link rel="icon" href="images/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 引入Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- 配置Tailwind自定义颜色 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#333333',      // 高级灰主色调
+                        secondary: '#f5f5f5',    // 米白色
+                        accent1: '#39b54a',      // 绿色点缀
+                        accent2: '#b04fbb',      // 紫色点缀
+                        dark: '#222222',
+                        light: '#f8f8f8'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- 自定义工具类 -->
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .transition-custom {
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+        }
+    </style>
+</head>
+<body class="bg-secondary text-primary font-sans">
+    <!-- 导航栏 -->
+    <header id="navbar" class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50 transition-custom">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <span class="text-accent2 text-2xl"><i class="fa fa-scissors"></i></span>
+                <span class="text-xl font-bold text-primary">未命名服装培训学校</span>
+            </a>
+            <!-- 桌面导航 -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="font-medium text-accent1 border-b-2 border-accent1 pb-1">首页</a>
+                <a href="courses.html" class="font-medium hover:text-accent1 transition-custom">课程体系</a>
+                <a href="faculty.html" class="font-medium hover:text-accent1 transition-custom">师资力量</a>
+                <a href="works.html" class="font-medium hover:text-accent1 transition-custom">作品展示</a>
+                <a href="employment.html" class="font-medium hover:text-accent1 transition-custom">就业保障</a>
+                <a href="trial.html" class="bg-accent1 hover:bg-accent1/90 text-white px-5 py-2 rounded-full transition-custom">预约免费试听</a>
+            </nav>
+            <!-- 移动端菜单按钮 -->
+            <button id="menuBtn" class="md:hidden text-primary text-xl">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <!-- 移动端导航菜单 -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+                <a href="index.html" class="font-medium py-2 text-accent1">首页</a>
+                <a href="courses.html" class="font-medium py-2 hover:text-accent1 transition-custom">课程体系</a>
+                <a href="faculty.html" class="font-medium py-2 hover:text-accent1 transition-custom">师资力量</a>
+                <a href="works.html" class="font-medium py-2 hover:text-accent1 transition-custom">作品展示</a>
+                <a href="employment.html" class="font-medium py-2 hover:text-accent1 transition-custom">就业保障</a>
+                <a href="trial.html" class="bg-accent1 hover:bg-accent1/90 text-white px-5 py-2 rounded-full text-center transition-custom">预约免费试听</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 英雄区域/轮播图 -->
+    <section id="home" class="relative h-screen overflow-hidden">
+        <div id="carousel" class="h-full">
+            <!-- 轮播图项1 -->
+            <div class="carousel-item absolute inset-0 opacity-100 transition-opacity duration-1000">
+                <img src="https://ts1.tc.mm.bing.net/th/id/R-C.987f582c510be58755c4933cda68d525?rik=C0D21hJDYvXosw&riu=http%3a%2f%2fimg.pconline.com.cn%2fimages%2fupload%2fupc%2ftx%2fwallpaper%2f1305%2f16%2fc4%2f20990657_1368686545122.jpg&ehk=netN2qzcCVS4ALUQfDOwxAwFcy41oxC%2b0xTFvOYy5ds%3d&risl=&pid=ImgRaw&r=0" alt="服装设计课堂" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/40 flex items-center">
+                    <div class="container mx-auto px-4 text-white">
+                        <h1 class="text-[clamp(2rem,5vw,4rem)] font-bold leading-tight text-shadow mb-4">
+                            打造时尚设计<br>精英人才
+                        </h1>
+                        <p class="text-[clamp(1rem,2vw,1.25rem)] max-w-2xl mb-8 text-shadow">
+                            毗邻广东省政府，坐落于教育资源核心区，对接广深时尚产业带，就业直通名企
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="courses.html" class="bg-accent1 hover:bg-accent1/90 text-white px-8 py-3 rounded-full text-lg font-medium transition-custom">
+                                浏览课程
+                            </a>
+                            <a href="contact.html" class="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border border-white px-8 py-3 rounded-full text-lg font-medium transition-custom">
+                                预约试听
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 轮播图项2 -->
+            <div class="carousel-item absolute inset-0 opacity-0 transition-opacity duration-1000">
+                <img src="https://ts3.tc.mm.bing.net/th/id/OIP-C.g9UbVfyVZX-SfD09JcYr5QHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="服装设计作品" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/40 flex items-center">
+                    <div class="container mx-auto px-4 text-white">
+                        <h1 class="text-[clamp(2rem,5vw,4rem)] font-bold leading-tight text-shadow mb-4">
+                            专业师资<br>小班教学
+                        </h1>
+                        <p class="text-[clamp(1rem,2vw,1.25rem)] max-w-2xl mb-8 text-shadow">
+                            行业资深设计师亲授，理论与实践结合，培养全方位服装专业人才
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="faculty.html" class="bg-accent2 hover:bg-accent2/90 text-white px-8 py-3 rounded-full text-lg font-medium transition-custom">
+                                了解师资
+                            </a>
+                            <a href="works.html" class="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border border-white px-8 py-3 rounded-full text-lg font-medium transition-custom">
+                                查看作品
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 轮播图控制按钮 -->
+            <button id="prevBtn" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 text-white w-10 h-10 rounded-full flex items-center justify-center backdrop-blur-sm transition-custom">
+                <i class="fa fa-chevron-left"></i>
+            </button>
+            <button id="nextBtn" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 text-white w-10 h-10 rounded-full flex items-center justify-center backdrop-blur-sm transition-custom">
+                <i class="fa fa-chevron-right"></i>
+            </button>
+            <!-- 轮播图指示器 -->
+            <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex space-x-3">
+                <button class="carousel-indicator w-3 h-3 rounded-full bg-white opacity-100 transition-custom"></button>
+                <button class="carousel-indicator w-3 h-3 rounded-full bg-white opacity-50 transition-custom"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心优势 -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold mb-4">我们的核心优势</h2>
+                <div class="w-20 h-1 bg-accent1 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">专注服装教育多年，我们以独特的教学理念和实践经验，帮助学员实现时尚设计梦想</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 优势1 -->
+                <div class="bg-light p-8 rounded-xl shadow-sm hover:shadow-md transition-custom">
+                    <div class="w-16 h-16 bg-accent1/10 rounded-full flex items-center justify-center text-accent1 text-2xl mb-6 mx-auto">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">小班教学</h3>
+                    <p class="text-gray-600 text-center">确保每位学员都能获得充分的指导和实践机会，师生比1:8，个性化教学方案</p>
+                </div>
+                <!-- 优势2 -->
+                <div class="bg-light p-8 rounded-xl shadow-sm hover:shadow-md transition-custom">
+                    <div class="w-16 h-16 bg-accent2/10 rounded-full flex items-center justify-center text-accent2 text-2xl mb-6 mx-auto">
+                        <i class="fa fa-industry"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">行业接轨</h3>
+                    <p class="text-gray-600 text-center">对接广深时尚产业带，引入最新行业技术和趋势，毕业即具备职场竞争力</p>
+                </div>
+                <!-- 优势3 -->
+                <div class="bg-light p-8 rounded-xl shadow-sm hover:shadow-md transition-custom">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center text-primary text-2xl mb-6 mx-auto">
+                        <i class="fa fa-certificate"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">政府背书</h3>
+                    <p class="text-gray-600 text-center">毗邻广东省政府，教育资源核心区，办学资质齐全，教学质量有保障</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-primary text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <span class="text-accent2 text-2xl"><i class="fa fa-scissors"></i></span>
+                        <span class="text-xl font-bold">未命名服装培训学校</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">培养时尚设计精英人才，对接广深时尚产业带，就业直通名企</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-white/10 hover:bg-accent2 w-10 h-10 rounded-full flex items-center justify-center transition-custom">
+                            <i class="fa fa-weixin"></i>
+                        </a>
+                        <a href="#" class="bg-white/10 hover:bg-accent2 w-10 h-10 rounded-full flex items-center justify-center transition-custom">
+                            <i class="fa fa-weibo"></i>
+                        </a>
+                        <a href="#" class="bg-white/10 hover:bg-accent2 w-10 h-10 rounded-full flex items-center justify-center transition-custom">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-6">快速链接</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-custom">首页</a></li>
+                        <li><a href="#courses" class="text-gray-400 hover:text-white transition-custom">课程体系</a></li>
+                        <li><a href="#faculty" class="text-gray-400 hover:text-white transition-custom">师资力量</a></li>
+                        <li><a href="#works" class="text-gray-400 hover:text-white transition-custom">作品展示</a></li>
+                        <li><a href="#employment" class="text-gray-400 hover:text-white transition-custom">就业保障</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-6">联系我们</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fa fa-map-marker text-accent2 mt-1 mr-3"></i>
+                            <span class="text-gray-400">广东省广州市越秀区东风中路305号</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-phone text-accent2 mr-3"></i>
+                            <span class="text-gray-400">400-123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-envelope text-accent2 mr-3"></i>
+                            <span class="text-gray-400">info@example.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 mb-4 md:mb-0">© 2023 未命名服装培训学校. 保留所有权利.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-custom">隐私政策</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-custom">使用条款</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-custom">网站地图</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

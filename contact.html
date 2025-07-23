@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 未命名服装培训学校</title>
+    <meta name="description" content="联系未命名服装培训学校，获取课程咨询、预约试听和招生信息，我们的顾问团队将为您提供专业服务。">
+    <link rel="icon" href="images/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#333333',
+                        secondary: '#f5f5f5',
+                        accent1: '#39b54a',
+                        accent2: '#b04fbb',
+                        dark: '#222222',
+                        light: '#f8f8f8'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-secondary text-primary font-sans">
+    <!-- 导航栏 -->
+    <header id="navbar" class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50 transition-custom">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <span class="text-accent2 text-2xl"><i class="fa fa-scissors"></i></span>
+                <span class="text-xl font-bold text-primary">未命名服装培训学校</span>
+            </a>
+            <!-- 桌面导航 -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="font-medium hover:text-accent1 transition-custom">首页</a>
+                <a href="courses.html" class="font-medium hover:text-accent1 transition-custom">课程体系</a>
+                <a href="faculty.html" class="font-medium hover:text-accent1 transition-custom">师资力量</a>
+                <a href="works.html" class="font-medium hover:text-accent1 transition-custom">作品展示</a>
+                <a href="employment.html" class="font-medium hover:text-accent1 transition-custom">就业保障</a>
+                <a href="contact.html" class="bg-accent1 hover:bg-accent1/90 text-white px-5 py-2 rounded-full transition-custom">预约免费试听</a>
+            </nav>
+            <!-- 移动端菜单按钮 -->
+            <button id="menuBtn" class="md:hidden text-primary text-xl">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <!-- 移动端导航菜单 -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+                <a href="index.html" class="font-medium py-2 hover:text-accent1 transition-custom">首页</a>
+                <a href="courses.html" class="font-medium py-2 hover:text-accent1 transition-custom">课程体系</a>
+                <a href="faculty.html" class="font-medium py-2 hover:text-accent1 transition-custom">师资力量</a>
+                <a href="works.html" class="font-medium py-2 hover:text-accent1 transition-custom">作品展示</a>
+                <a href="employment.html" class="font-medium py-2 hover:text-accent1 transition-custom">就业保障</a>
+                <a href="contact.html" class="bg-accent1 hover:bg-accent1/90 text-white px-5 py-2 rounded-full transition-custom">预约免费试听</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 页面标题 -->
+    <section class="pt-28 pb-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h1 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-center mb-4">联系我们</h1>
+            <div class="w-20 h-1 bg-accent1 mx-auto mb-6"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto text-center">填写下方表单预约免费试听课程，或通过以下方式联系我们，我们的顾问团队将为您提供专业服务</p>
+        </div>
+    </section>
+
+    <!-- 联系信息和表单 -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-2xl font-bold mb-6">联系方式</h2>
+                    <div class="w-20 h-1 bg-accent1 mb-8"></div>
+
+                    <div class="space-y-8 mb-12">
+                        <div class="flex items-start">
+                            <div class="bg-accent1/10 p-3 rounded-full mr-4 mt-1 flex-shrink-0">
+                                <i class="fa fa-map-marker text-accent1"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">学校地址</h3>
+                                <p class="text-gray-600">广东省广州市越秀区东风中路305号</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-accent1/10 p-3 rounded-full mr-4 mt-1 flex-shrink-0">
+                                <i class="fa fa-phone text-accent1"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">联系电话</h3>
+                                <p class="text-gray-600">400-123-4567</p>
+                                <p class="text-gray-500 text-sm mt-1">周一至周日 9:00-21:00</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-accent1/10 p-3 rounded-full mr-4 mt-1 flex-shrink-0">
+                                <i class="fa fa-envelope text-accent1"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">电子邮箱</h3>
+                                <p class="text-gray-600">info@example.com</p>
+                                <p class="text-gray-500 text-sm mt-1">我们将在24小时内回复您的邮件</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-accent1/10 p-3 rounded-full mr-4 mt-1 flex-shrink-0">
+                                <i class="fa fa-weixin text-accent1"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">微信咨询</h3>
+                                <div class="bg-white p-4 rounded-lg inline-block shadow-sm">
+                                    <img src="https://images.unsplash.com/photo-1623479322729-28b25c16b011?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="微信二维码" class="w-32 h-32 object-cover">
+                                </div>
+                                <p class="text-gray-500 text-sm mt-2">扫码添加微信，获取最新课程信息</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 社交媒体 -->
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">关注我们</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-white hover:bg-accent2 text-primary hover:text-white w-12 h-12 rounded-full flex items-center justify-center transition-custom shadow-sm">
+                                <i class="fa fa-weixin"></i>
+                            </a>
+                            <a href="#" class="bg-white hover:bg-accent2 text-primary hover:text-white w-12 h-12 rounded-full flex items-center justify-center transition-custom shadow-sm">
+                                <i class="fa fa-weibo"></i>
+                            </a>
+                            <a href="#" class="bg-white hover:bg-accent2 text-primary hover:text-white w-12 h-12 rounded-full flex items-center justify-center transition-custom shadow-sm">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="#" class="bg-white hover:bg-accent2 text-primary hover:text-white w-12 h-12 rounded-full flex items-center justify-center transition-custom shadow-sm">
+                                <i class="fa fa-youtube-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 联系表单 -->
+                <div>
+                    <div class="bg-white p-8 rounded-xl shadow-sm">
+                        <h2 class="text-2xl font-bold mb-6">预约免费试听课程</h2>
+                        <form id="contactForm" class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 font-medium mb-2">姓名 <span class="text-red-500">*</span></label>
+                                    <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent1 focus:border-transparent transition-custom" placeholder="请输入您的姓名">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-gray-700 font-medium mb-2">电话 <span class="text-red-500">*</span></label>
+                                    <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent1 focus:border-transparent transition-custom" placeholder="请输入您的联系电话">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="course" class="block text-gray-700 font-medium mb-2">意向课程</label>
+                                <select id="course" name="course" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent1 focus:border-transparent transition-custom">
+                                    <option value="">请选择意向课程</option>
+                                    <option value="design">服装设计课程</option>
+                                    <option value="pattern">服装制版课程</option>
+                                    <option value="craft">服装工艺课程</option>
+                                    <option value="comprehensive">服装综合课程</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-gray-700 font-medium mb-2">留言</label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent1 focus:border-transparent transition-custom" placeholder="请输入您的疑问或需求"></textarea>
+                            </div>
+
+                            <div class="flex items-start">
+                                <input type="checkbox" id="agreement" name="agreement" class="mt-1 mr-3">
+                                <label for="agreement" class="text-gray-600 text-sm">我同意学校通过电话或短信方式联系我，提供课程咨询服务</label>
+                            </div>
+
+                            <button type="submit" class="w-full bg-accent1 hover:bg-accent1/90 text-white font-medium py-3 px-6 rounded-lg transition-custom">
+                                提交预约 <i class="fa fa-paper-plane ml-2"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- 学校环境 -->
+                    <div class="mt-8 grid grid-cols-2 gap-4">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="学校环境" class="rounded-lg shadow-sm h-40 object-cover">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="教学环境" class="rounded-lg shadow-sm h-40 object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 地图 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-8 text-center">学校位置</h2>
+            <div class="bg-gray-100 rounded-xl overflow-hidden h-96 flex items-center justify-center">
+                <div class="text-center p-8">
+                    <i class="fa fa-map-o text-5xl text-gray-300 mb-4"></i>
+                    <p class="text-gray-500">地图加载中...广东省广州市越秀区东风中路305号</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold mb-12 text-center">常见问题</h2>
+
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <button class="flex justify-between items-center w-full text-left font-bold text-lg">
+                        <span>Q:课程有什么入学要求吗？</span>
+                        <i class="fa fa-chevron-down text-accent1 transition-transform"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600">
+                        A:我们的课程对学历和专业背景没有严格要求，只要您对服装设计、制版或工艺有兴趣，都可以报名学习。部分高级课程建议有一定基础或相关经验。
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <button class="flex justify-between items-center w-full text-left font-bold text-lg">
+                        <span>Q:毕业后提供就业推荐吗？</span>
+                        <i class="fa fa-chevron-down text-accent1 transition-transform"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600">
+                        A:是的，我们与200多家服装企业建立合作关系，为毕业生提供就业推荐服务。同时，我们还提供简历指导、面试培训等就业支持服务。
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <button class="flex justify-between items-center w-full text-left font-bold text-lg">
+                        <span>Q:可以申请分期付款吗？</span>
+                        <i class="fa fa-chevron-down text-accent1 transition-transform"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600">
+                        A:可以的，我们提供多种付款方式，包括一次性付款和分期付款。具体分期方案可以咨询我们的课程顾问。
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <button class="flex justify-between items-center w-full text-left font-bold text-lg">
+                        <span>Q:学校提供住宿吗？</span>
+                        <i class="fa fa-chevron-down text-accent1 transition-transform"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600">
+                        A:学校不提供校内住宿，但我们可以推荐周边的学生公寓和合租信息，价格在1500-3000元/月不等，学生可以根据需求选择。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-primary text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <span class="text-accent2 text-2xl"><i class="fa fa-scissors"></i></span>
+                        <span class="text-xl font-bold">未命名服装培训学校</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">培养时尚设计精英人才，对接广深时尚产业带，就业直通名企</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-white/10 hover:bg-accent2 w-10 h-10 rounded-full flex items-center justify-center transition-custom">
+                            <i class="fa fa-weixin"></i>
+                        </a>
+                        <a href="#" class="bg-white/10 hover:bg-accent2 w-10 h-10 rounded-full flex items-center justify-center transition-custom">
+                            <i class="fa fa-weibo"></i>
+                        </a>
+                        <a href="#" class="bg-white/10 hover:bg-accent2 w-10 h-10 rounded-full flex items-center justify-center transition-custom">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-6">快速链接</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-custom">首页</a></li>
+                        <li><a href="courses.html" class="text-gray-400 hover:text-white transition-custom">课程体系</a></li>
+                        <li><a href="faculty.html" class="text-gray-400 hover:text-white transition-custom">师资力量</a></li>
+                        <li><a href="works.html" class="text-gray-400 hover:text-white transition-custom">作品展示</a></li>
+                        <li><a href="employment.html" class="text-gray-400 hover:text-white transition-custom">就业保障</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-6">联系我们</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fa fa-map-marker text-accent2 mt-1 mr-3"></i>
+                            <span class="text-gray-400">广东省广州市越秀区东风中路305号</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-phone text-accent2 mr-3"></i>
+                            <span class="text-gray-400">400-123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-envelope text-accent2 mr-3"></i>
+                            <span class="text-gray-400">info@example.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 mb-4 md:mb-0">© 2023 未命名服装培训学校. 保留所有权利.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-custom">隐私政策</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-custom">使用条款</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-custom">网站地图</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

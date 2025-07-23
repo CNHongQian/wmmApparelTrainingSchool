@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>预约免费试听 - 未命名服装培训学校</title>
+    <link rel="icon" href="images/icon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#333333',
+                        accent1: '#39b54a',
+                        accent2: '#b04fbb',
+                    },
+                    transitionProperty: {
+                        'custom': 'all 0.3s ease-in-out',
+                    }
+                },
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .transition-custom {
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header id="navbar" class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50 transition-custom">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <span class="text-accent2 text-2xl"><i class="fa fa-scissors"></i></span>
+                <span class="text-xl font-bold text-primary">未命名服装培训学校</span>
+            </a>
+            <!-- 桌面导航 -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="font-medium hover:text-accent1 transition-custom">首页</a>
+                <a href="courses.html" class="font-medium hover:text-accent1 transition-custom">课程体系</a>
+                <a href="faculty.html" class="font-medium hover:text-accent1 transition-custom">师资力量</a>
+                <a href="works.html" class="font-medium hover:text-accent1 transition-custom">作品展示</a>
+                <a href="employment.html" class="font-medium hover:text-accent1 transition-custom">就业保障</a>
+                <a href="trial.html" class="bg-accent1 hover:bg-accent1/90 text-white px-5 py-2 rounded-full transition-custom">预约免费试听</a>
+            </nav>
+            <!-- 移动端菜单按钮 -->
+            <button id="menuBtn" class="md:hidden text-primary text-2xl">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <!-- 移动端菜单 -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+                <a href="index.html" class="font-medium py-2 hover:text-accent1 transition-custom">首页</a>
+                <a href="courses.html" class="font-medium py-2 hover:text-accent1 transition-custom">课程体系</a>
+                <a href="faculty.html" class="font-medium py-2 hover:text-accent1 transition-custom">师资力量</a>
+                <a href="works.html" class="font-medium py-2 hover:text-accent1 transition-custom">作品展示</a>
+                <a href="employment.html" class="font-medium py-2 hover:text-accent1 transition-custom">就业保障</a>
+                <a href="trial.html" class="bg-accent1 hover:bg-accent1/90 text-white px-5 py-2 rounded-full text-center transition-custom">预约免费试听</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 预约试听表单区域 -->
+    <section class="pt-32 pb-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold mb-4">预约免费试听</h2>
+                    <div class="w-20 h-1 bg-accent1 mx-auto mb-6"></div>
+                    <p class="text-gray-600">填写以下信息，即可预约免费试听课程，我们的顾问将尽快与您联系</p>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+                    <form id="trialForm" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">姓名 <span class="text-red-500">*</span></label>
+                                <input type="text" id="name" name="name" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent1 focus:border-accent1 transition-custom"
+                                    placeholder="请输入您的姓名">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">手机号码 <span class="text-red-500">*</span></label>
+                                <input type="tel" id="phone" name="phone" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent1 focus:border-accent1 transition-custom"
+                                    placeholder="请输入您的手机号码">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="course" class="block text-gray-700 font-medium mb-2">感兴趣的课程 <span class="text-red-500">*</span></label>
+                            <select id="course" name="course" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent1 focus:border-accent1 transition-custom appearance-none bg-white">
+                                <option value="">请选择课程</option>
+                                <option value="design">设计课程</option>
+                                <option value="pattern">制版课程</option>
+                                <option value="craft">工艺课程</option>
+                                <option value="comprehensive">综合课程</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">留言 (选填)</label>
+                            <textarea id="message" name="message" rows="4"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent1 focus:border-accent1 transition-custom"
+                                placeholder="请输入您的疑问或需求"></textarea>
+                        </div>
+
+                        <div class="pt-4">
+                            <button type="submit" class="w-full bg-accent1 hover:bg-accent1/90 text-white font-medium py-3 px-6 rounded-lg transition-custom transform hover:scale-105">
+                                提交预约
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-primary text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <span class="text-accent2 text-2xl"><i class="fa fa-scissors"></i></span>
+                        <span class="text-xl font-bold">未命名服装培训学校</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">专业的服装设计师培训基地，培养行业精英人才，助力时尚梦想起航。</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-custom"><i class="fa fa-weixin text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-custom"><i class="fa fa-weibo text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-custom"><i class="fa fa-instagram text-xl"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-6">快速链接</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-custom">首页</a></li>
+                        <li><a href="courses.html" class="text-gray-400 hover:text-white transition-custom">课程体系</a></li>
+                        <li><a href="faculty.html" class="text-gray-400 hover:text-white transition-custom">师资力量</a></li>
+                        <li><a href="works.html" class="text-gray-400 hover:text-white transition-custom">作品展示</a></li>
+                        <li><a href="employment.html" class="text-gray-400 hover:text-white transition-custom">就业保障</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-6">联系我们</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start space-x-3">
+                            <i class="fa fa-map-marker text-accent1 mt-1"></i>
+                            <span class="text-gray-400">北京市朝阳区时尚设计大厦A座15层</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa fa-phone text-accent1"></i>
+                            <span class="text-gray-400">400-123-4567</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa fa-envelope text-accent1"></i>
+                            <span class="text-gray-400">info@fashion-school.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2023 未命名服装培训学校. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // 表单验证
+        document.getElementById('trialForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const course = document.getElementById('course').value;
+
+            if (!name || !phone || !course) {
+                alert('请填写所有必填字段');
+                return;
+            }
+
+            if (!/^1[3-9]\d{9}$/.test(phone)) {
+                alert('请输入有效的手机号码');
+                return;
+            }
+
+            // 这里可以添加表单提交逻辑
+            alert('预约提交成功！我们将尽快与您联系。');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

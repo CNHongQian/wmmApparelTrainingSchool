@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课程体系 - 未命名服装培训学校</title>
+    <meta name="description" content="未命名服装培训学校课程体系，包含设计、制版、工艺等专业课程，培养时尚设计精英人才。">
+    <link rel="icon" href="images/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#333333',
+                        secondary: '#f5f5f5',
+                        accent1: '#39b54a',
+                        accent2: '#b04fbb',
+                        dark: '#222222',
+                        light: '#f8f8f8'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-secondary text-primary font-sans">
+    <!-- 导航栏 -->
+    <header id="navbar" class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50 transition-custom">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <span class="text-accent2 text-2xl"><i class="fa fa-scissors"></i></span>
+                <span class="text-xl font-bold text-primary">未命名服装培训学校</span>
+            </a>
+            <!-- 桌面导航 -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="font-medium hover:text-accent1 transition-custom">首页</a>
+                <a href="courses.html" class="font-medium text-accent1 border-b-2 border-accent1 pb-1">课程体系</a>
+                <a href="faculty.html" class="font-medium hover:text-accent1 transition-custom">师资力量</a>
+                <a href="works.html" class="font-medium hover:text-accent1 transition-custom">作品展示</a>
+                <a href="employment.html" class="font-medium hover:text-accent1 transition-custom">就业保障</a>
+                <a href="contact.html" class="bg-accent1 hover:bg-accent1/90 text-white px-5 py-2 rounded-full transition-custom">预约免费试听</a>
+            </nav>
+            <!-- 移动端菜单按钮 -->
+            <button id="menuBtn" class="md:hidden text-primary text-xl">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <!-- 移动端导航菜单 -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+                <a href="index.html" class="font-medium py-2 hover:text-accent1 transition-custom">首页</a>
+                <a href="courses.html" class="font-medium py-2 text-accent1">课程体系</a>
+                <a href="faculty.html" class="font-medium py-2 hover:text-accent1 transition-custom">师资力量</a>
+                <a href="works.html" class="font-medium py-2 hover:text-accent1 transition-custom">作品展示</a>
+                <a href="employment.html" class="font-medium py-2 hover:text-accent1 transition-custom">就业保障</a>
+                <a href="contact.html" class="bg-accent1 hover:bg-accent1/90 text-white px-5 py-2 rounded-full transition-custom">预约免费试听</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 页面标题 -->
+    <section class="pt-28 pb-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h1 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-center mb-4">课程体系</h1>
+            <div class="w-20 h-1 bg-accent1 mx-auto mb-6"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto text-center">多元化课程设置，满足不同阶段学习者需求，从基础到高级，全方位提升设计能力</p>
+        </div>
+    </section>
+
+    <!-- 课程分类导航 -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-center mb-12 flex-wrap gap-4">
+                <button class="course-tab active bg-accent1 text-white px-6 py-3 rounded-full" data-tab="design">设计课程</button>
+                <button class="course-tab bg-white text-gray-700 px-6 py-3 rounded-full hover:bg-gray-100" data-tab="pattern">制版课程</button>
+                <button class="course-tab bg-white text-gray-700 px-6 py-3 rounded-full hover:bg-gray-100" data-tab="craft">工艺课程</button>
+            </div>
+
+            <!-- 设计课程内容 -->
+            <div class="course-content active" id="design">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- 课程卡片1 -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-custom">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="时装设计基础" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="bg-accent1/10 text-accent1 text-sm px-3 py-1 rounded-full">入门</span>
+                                <span class="font-bold text-lg">¥5,800</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">时装设计基础</h3>
+                            <p class="text-gray-600 mb-4">掌握时装设计基本原理、素描技巧和色彩搭配，培养设计思维和创意表达能力。</p>
+                            <div class="flex items-center text-gray-500 mb-4">
+                                <span class="mr-4"><i class="fa fa-clock-o mr-1"></i> 3个月</span>
+                                <span><i class="fa fa-user mr-1"></i> 小班教学</span>
+                            </div>
+                            <a href="#" class="block text-center bg-primary hover:bg-primary/90 text-white py-3 rounded-lg transition-custom">查看详情</a>
+                        </div>
+                    </div>
+
+                    <!-- 课程卡片2 -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-custom">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="数码服装设计" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="bg-accent2/10 text-accent2 text-sm px-3 py-1 rounded-full">进阶</span>
+                                <span class="font-bold text-lg">¥7,200</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">数码服装设计</h3>
+                            <p class="text-gray-600 mb-4">学习使用Photoshop、Illustrator等专业软件进行服装设计，实现数字化呈现。</p>
+                            <div class="flex items-center text-gray-500 mb-4">
+                                <span class="mr-4"><i class="fa fa-clock-o mr-1"></i> 2个月</span>
+                                <span><i class="fa fa-user mr-1"></i> 小班教学</span>
+                            </div>
+                            <a href="#" class="block text-center bg-primary hover:bg-primary/90 text-white py-3 rounded-lg transition-custom">查看详情</a>
+                        </div>
+                    </div>
+
+                    <!-- 课程卡片3 -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-custom">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="时装系列设计" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="bg-primary/10 text-primary text-sm px-3 py-1 rounded-full">高级</span>
+                                <span class="font-bold text-lg">¥9,800</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">时装系列设计</h3>
+                            <p class="text-gray-600 mb-4">从主题构思到系列完整呈现，学习时装发布会策划与执行，打造个人设计品牌。</p>
+                            <div class="flex items-center text-gray-500 mb-4">
+                                <span class="mr-4"><i class="fa fa-clock-o mr-1"></i> 4个月</span>
+                                <span><i class="fa fa-user mr-1"></i> 导师一对一</span>
+                            </div>
+                            <a href="#" class="block text-center bg-primary hover:bg-primary/90 text-white py-3 rounded-lg transition-custom">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 制版课程内容 -->
+            <div class="course-content hidden" id="pattern">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- 课程卡片4 -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-custom">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="服装结构基础" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="bg-accent1/10 text-accent1 text-sm px-3 py-1 rounded-full">入门</span>
+                                <span class="font-bold text-lg">¥6,200</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">服装结构基础</h3>
+                            <p class="text-gray-600 mb-4">学习服装结构设计原理，掌握基本版型制作，奠定扎实的制版基础。</p>
+                            <div class="flex items-center text-gray-500 mb-4">
+                                <span class="mr-4"><i class="fa fa-clock-o mr-1"></i> 3个月</span>
+                                <span><i class="fa fa-user mr-1"></i> 小班教学</span>
+                            </div>
+                            <a href="#" class="block text-center bg-primary hover:bg-primary/90 text-white py-3 rounded-lg transition-custom">查看详情</a>
+                        </div>
+                    </div>
+
+                    <!-- 课程卡片5 -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-custom">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="高级定制制版" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="bg-accent2/10 text-accent2 text-sm px-3 py-1 rounded-full">进阶</span>
+                                <span class="font-bold text-lg">¥7,800</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">高级定制制版</h3>
+                            <p class="text-gray-600 mb-4">掌握高级定制服装的版型设计与制作技巧，学习立体裁剪与平面制版结合的方法。</p>
+                            <div class="flex items-center text-gray-500 mb-4">
+                                <span class="mr-4"><i class="fa fa-clock-o mr-1"></i> 3个月</span>
+                                <span><i class="fa fa-user mr-1"></i> 小班教学</span>
+                            </div>
+                            <a href="#" class="block text-center bg-primary hover:bg-primary/90 text-white py-3 rounded-lg transition-custom">查看详情</a>
+                        </div>
+                    </div>
+
+                    <!-- 课程卡片6 -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-custom">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="CAD服装制版" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="bg-primary/10 text-primary text-sm px-3 py-1 rounded-full">高级</span>
+                                <span class="font-bold text-lg">¥8,500</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">CAD服装制版</h3>
+                            <p class="text-gray-600 mb-4">学习使用专业服装CAD软件进行数字化制版，提高制版效率和精确度。</p>
+                            <div class="flex items-center text-gray-500 mb-4">
+                                <span class="mr-4"><i class="fa fa-clock-o mr-1"></i> 2个月</span>
+                                <span><i class="fa fa-user mr-1"></i> 小班教学</span>
+                            </div>
+                            <a href="#" class="block text-center bg-primary hover:bg-primary/90 text-white py-3 rounded-lg transition-custom">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 工艺课程内容 -->
+            <div class="course-content hidden" id="craft">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- 课程卡片7 -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-custom">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="服装缝纫工艺" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="bg-accent1/10 text-accent1 text-sm px-3 py-1 rounded-full">入门</span>
+                                <span class="font-bold text-lg">¥5,500</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">服装缝纫工艺</h3>
+                            <p class="text-gray-600 mb-4">掌握各种服装缝纫技巧和工艺处理方法，学习工业缝纫机操作和维护。</p>
+                            <div class="flex items-center text-gray-500 mb-4">
+                                <span class="mr-4"><i class="fa fa-clock-o mr-1"></i> 2个月</span>
+                                <span><i class="fa fa-user mr-1"></i> 小班教学</span>
+                            </div>
+                            <a href="#" class="block text-center bg-primary hover:bg-primary/90 text-white py-3 rounded-lg transition-custom">查看详情</a>
+                        </div>
+                    </div>
+
+                    <!-- 课程卡片8 -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-custom">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="立体裁剪工艺" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="bg-accent2/10 text-accent2 text-sm px-3 py-1 rounded-full">进阶</span>
+                                <span class="font-bold text-lg">¥6,800</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">立体裁剪工艺</h3>
+                            <p class="text-gray-600 mb-4">学习立体裁剪的基本原理和高级技巧，掌握各种面料的立体造型方法。</p>
+                            <div class="flex items-center text-gray-500 mb-4">
+                                <span class="mr-4"><i class="fa fa-clock-o mr-1"></i> 3个月</span>
+                                <span><i class="fa fa-user mr-1"></i> 小班教学</span>
+                            </div>
+                            <a href="#" class="block text-center bg-primary hover:bg-primary/90 text-white py-3 rounded-lg transition-custom">查看详情</a>
+                        </div>
+                    </div>
+
+                    <!-- 课程卡片9 -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-custom">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="服装装饰工艺" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="bg-primary/10 text-primary text-sm px-3 py-1 rounded-full">高级</span>
+                                <span class="font-bold text-lg">¥6,200</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">服装装饰工艺</h3>
+                            <p class="text-gray-600 mb-4">学习各种服装装饰工艺，包括刺绣、钉珠、印花、烫金等高级装饰技巧。</p>
+                            <div class="flex items-center text-gray-500 mb-4">
+                                <span class="mr-4"><i class="fa fa-clock-o mr-1"></i> 2个月</span>
+                                <span><i class="fa fa-user mr-1"></i> 小班教学</span>
+                            </div>
+                            <a href="#" class="block text-center bg-primary hover:bg-primary/90 text-white py-3 rounded-lg transition-custom">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 咨询区域 -->
+    <section class="py-16 bg-accent1/5">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">对课程有疑问？</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-8">填写咨询表单，我们的专业顾问将为您提供详细的课程解答和学习建议</p>
+            <a href="contact.html" class="inline-block bg-accent1 hover:bg-accent1/90 text-white px-8 py-3 rounded-full text-lg font-medium transition-custom">
+                立即咨询
+            </a>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-primary text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <span class="text-accent2 text-2xl"><i class="fa fa-scissors"></i></span>
+                        <span class="text-xl font-bold">未命名服装培训学校</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">培养时尚设计精英人才，对接广深时尚产业带，就业直通名企</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-white/10 hover:bg-accent2 w-10 h-10 rounded-full flex items-center justify-center transition-custom">
+                            <i class="fa fa-weixin"></i>
+                        </a>
+                        <a href="#" class="bg-white/10 hover:bg-accent2 w-10 h-10 rounded-full flex items-center justify-center transition-custom">
+                            <i class="fa fa-weibo"></i>
+                        </a>
+                        <a href="#" class="bg-white/10 hover:bg-accent2 w-10 h-10 rounded-full flex items-center justify-center transition-custom">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-6">快速链接</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-custom">首页</a></li>
+                        <li><a href="courses.html" class="text-gray-400 hover:text-white transition-custom">课程体系</a></li>
+                        <li><a href="faculty.html" class="text-gray-400 hover:text-white transition-custom">师资力量</a></li>
+                        <li><a href="works.html" class="text-gray-400 hover:text-white transition-custom">作品展示</a></li>
+                        <li><a href="employment.html" class="text-gray-400 hover:text-white transition-custom">就业保障</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-6">联系我们</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fa fa-map-marker text-accent2 mt-1 mr-3"></i>
+                            <span class="text-gray-400">广东省广州市越秀区东风中路305号</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-phone text-accent2 mr-3"></i>
+                            <span class="text-gray-400">400-123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-envelope text-accent2 mr-3"></i>
+                            <span class="text-gray-400">info@example.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 mb-4 md:mb-0">© 2023 未命名服装培训学校. 保留所有权利.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-custom">隐私政策</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-custom">使用条款</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-custom">网站地图</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

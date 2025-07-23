@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品展示 - 未命名服装培训学校</title>
+    <meta name="description" content="未命名服装培训学校学生作品展示，展示设计、制版、工艺等多方面的优秀学生作品。">
+    <link rel="icon" href="images/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#333333',
+                        secondary: '#f5f5f5',
+                        accent1: '#39b54a',
+                        accent2: '#b04fbb',
+                        dark: '#222222',
+                        light: '#f8f8f8'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-secondary text-primary font-sans">
+    <!-- 导航栏 -->
+    <header id="navbar" class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50 transition-custom">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <span class="text-accent2 text-2xl"><i class="fa fa-scissors"></i></span>
+                <span class="text-xl font-bold text-primary">未命名服装培训学校</span>
+            </a>
+            <!-- 桌面导航 -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="font-medium hover:text-accent1 transition-custom">首页</a>
+                <a href="courses.html" class="font-medium hover:text-accent1 transition-custom">课程体系</a>
+                <a href="faculty.html" class="font-medium hover:text-accent1 transition-custom">师资力量</a>
+                <a href="works.html" class="font-medium text-accent1 border-b-2 border-accent1 pb-1">作品展示</a>
+                <a href="employment.html" class="font-medium hover:text-accent1 transition-custom">就业保障</a>
+                <a href="contact.html" class="bg-accent1 hover:bg-accent1/90 text-white px-5 py-2 rounded-full transition-custom">预约免费试听</a>
+            </nav>
+            <!-- 移动端菜单按钮 -->
+            <button id="menuBtn" class="md:hidden text-primary text-xl">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <!-- 移动端导航菜单 -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+                <a href="index.html" class="font-medium py-2 hover:text-accent1 transition-custom">首页</a>
+                <a href="courses.html" class="font-medium py-2 hover:text-accent1 transition-custom">课程体系</a>
+                <a href="faculty.html" class="font-medium py-2 hover:text-accent1 transition-custom">师资力量</a>
+                <a href="works.html" class="font-medium py-2 text-accent1">作品展示</a>
+                <a href="employment.html" class="font-medium py-2 hover:text-accent1 transition-custom">就业保障</a>
+                <a href="contact.html" class="bg-accent1 hover:bg-accent1/90 text-white px-5 py-2 rounded-full transition-custom">预约免费试听</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 页面标题 -->
+    <section class="pt-28 pb-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h1 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-center mb-4">学生作品展示</h1>
+            <div class="w-20 h-1 bg-accent1 mx-auto mb-6"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto text-center">展示我校学生在设计、制版、工艺等多方面的优秀作品，见证成长与创意</p>
+        </div>
+    </section>
+
+    <!-- 作品分类 -->
+    <section class="py-10 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="bg-accent1 text-white px-6 py-2 rounded-full text-sm font-medium transition-custom">全部作品</button>
+                <button class="bg-white hover:bg-accent1/10 px-6 py-2 rounded-full text-sm font-medium transition-custom">设计作品</button>
+                <button class="bg-white hover:bg-accent1/10 px-6 py-2 rounded-full text-sm font-medium transition-custom">制版作品</button>
+                <button class="bg-white hover:bg-accent1/10 px-6 py-2 rounded-full text-sm font-medium transition-custom">工艺作品</button>
+                <button class="bg-white hover:bg-accent1/10 px-6 py-2 rounded-full text-sm font-medium transition-custom">毕业设计</button>
+            </div>
+
+            <!-- 作品网格 -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- 作品1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-custom group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="服装设计作品 - 现代简约系列" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                            <div class="p-6 text-white">
+                                <h3 class="text-xl font-bold mb-1">现代简约系列</h3>
+                                <p class="text-gray-200">2023届 设计班 - 陈同学</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">现代简约系列</h3>
+                        <p class="text-gray-600 mb-4">以简约线条和中性色调为主，融合现代都市风格，展现简约而不简单的设计理念。</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">设计课程作品</span>
+                            <a href="#" class="text-accent1 hover:text-accent1/80 font-medium transition-custom">查看详情 <i class="fa fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 作品2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-custom group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="服装制版作品 - 立体剪裁" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                            <div class="p-6 text-white">
+                                <h3 class="text-xl font-bold mb-1">立体剪裁作品</h3>
+                                <p class="text-gray-200">2023届 制版班 - 李同学</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">立体剪裁作品</h3>
+                        <p class="text-gray-600 mb-4">通过立体剪裁技术，展现服装结构的美感与实用性，注重细节处理与版型优化。</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">制版课程作品</span>
+                            <a href="#" class="text-accent1 hover:text-accent1/80 font-medium transition-custom">查看详情 <i class="fa fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 作品3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-custom group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="服装工艺作品 - 手工刺绣" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                            <div class="p-6 text-white">
+                                <h3 class="text-xl font-bold mb-1">手工刺绣工艺</h3>
+                                <p class="text-gray-200">2023届 工艺班 - 王同学</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">手工刺绣工艺</h3>
+                        <p class="text-gray-600 mb-4">结合传统刺绣工艺与现代设计元素，展现精致的手工技艺与创新设计思维。</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">工艺课程作品</span>
+                            <a href="#" class="text-accent1 hover:text-accent1/80 font-medium transition-custom">查看详情 <i class="fa fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 作品4 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-custom group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="毕业设计 - 环保材料系列" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                            <div class="p-6 text-white">
+                                <h3 class="text-xl font-bold mb-1">环保材料系列</h3>
+                                <p class="text-gray-200">2023届 毕业设计 - 林同学</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">环保材料系列</h3>
+                        <p class="text-gray-600 mb-4">使用回收材料与环保面料，探索可持续时尚的可能性，展现环保与时尚的完美结合。</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">毕业设计作品</span>
+                            <a href="#" class="text-accent1 hover:text-accent1/80 font-medium transition-custom">查看详情 <i class="fa fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 作品5 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-custom group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="服装设计作品 - 东方元素" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                            <div class="p-6 text-white">
+                                <h3 class="text-xl font-bold mb-1">东方元素系列</h3>
+                                <p class="text-gray-200">2023届 设计班 - 张同学</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">东方元素系列</h3>
+                        <p class="text-gray-600 mb-4">融合传统东方美学与现代服装设计，展现中华文化底蕴与时尚创新精神。</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">设计课程作品</span>
+                            <a href="#" class="text-accent1 hover:text-accent1/80 font-medium transition-custom">查看详情 <i class="fa fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 作品6 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-custom group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="服装制版作品 - 高级定制" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                            <div class="p-6 text-white">
+                                <h3 class="text-xl font-bold mb-1">高级定制系列</h3>
+                                <p class="text-gray-200">2023届 制版班 - 刘同学</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">高级定制系列</h3>
+                        <p class="text-gray-600 mb-4">专注于精细剪裁与立体造型，展现高级定制服装的精湛工艺与完美版型。</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">制版课程作品</span>
+                            <a href="#" class="text-accent1 hover:text-accent1/80 font-medium transition-custom">查看详情 <i class="fa fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 加载更多按钮 -->
+            <div class="text-center mt-12">
+                <button class="bg-white hover:bg-gray-50 text-primary border border-gray-300 px-8 py-3 rounded-full font-medium transition-custom">
+                    加载更多作品 <i class="fa fa-refresh ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 咨询区域 -->
+    <section class="py-16 bg-accent2/10">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold mb-6">想亲自创作这样的作品吗？</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-8">加入我们的服装培训课程，由行业资深设计师亲自指导，从设计到制作，全方位提升您的服装专业技能</p>
+            <a href="contact.html" class="bg-accent1 hover:bg-accent1/90 text-white px-8 py-3 rounded-full font-medium transition-custom inline-block">
+                预约免费试听课程 <i class="fa fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-primary text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <span class="text-accent2 text-2xl"><i class="fa fa-scissors"></i></span>
+                        <span class="text-xl font-bold">未命名服装培训学校</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">培养时尚设计精英人才，对接广深时尚产业带，就业直通名企</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-white/10 hover:bg-accent2 w-10 h-10 rounded-full flex items-center justify-center transition-custom">
+                            <i class="fa fa-weixin"></i>
+                        </a>
+                        <a href="#" class="bg-white/10 hover:bg-accent2 w-10 h-10 rounded-full flex items-center justify-center transition-custom">
+                            <i class="fa fa-weibo"></i>
+                        </a>
+                        <a href="#" class="bg-white/10 hover:bg-accent2 w-10 h-10 rounded-full flex items-center justify-center transition-custom">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-6">快速链接</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-custom">首页</a></li>
+                        <li><a href="courses.html" class="text-gray-400 hover:text-white transition-custom">课程体系</a></li>
+                        <li><a href="faculty.html" class="text-gray-400 hover:text-white transition-custom">师资力量</a></li>
+                        <li><a href="works.html" class="text-gray-400 hover:text-white transition-custom">作品展示</a></li>
+                        <li><a href="employment.html" class="text-gray-400 hover:text-white transition-custom">就业保障</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-6">联系我们</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fa fa-map-marker text-accent2 mt-1 mr-3"></i>
+                            <span class="text-gray-400">广东省广州市越秀区东风中路305号</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-phone text-accent2 mr-3"></i>
+                            <span class="text-gray-400">400-123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-envelope text-accent2 mr-3"></i>
+                            <span class="text-gray-400">info@example.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 mb-4 md:mb-0">© 2023 未命名服装培训学校. 保留所有权利.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-custom">隐私政策</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-custom">使用条款</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-custom">网站地图</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

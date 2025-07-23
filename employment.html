@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>就业保障 - 未命名服装培训学校</title>
+    <meta name="description" content="未命名服装培训学校就业保障体系，98%就业率，与200+企业合作，提供就业推荐、创业支持和终身职业发展服务。">
+    <link rel="icon" href="images/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#333333',
+                        secondary: '#f5f5f5',
+                        accent1: '#39b54a',
+                        accent2: '#b04fbb',
+                        dark: '#222222',
+                        light: '#f8f8f8'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-secondary text-primary font-sans">
+    <!-- 导航栏 -->
+    <header id="navbar" class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50 transition-custom">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <span class="text-accent2 text-2xl"><i class="fa fa-scissors"></i></span>
+                <span class="text-xl font-bold text-primary">未命名服装培训学校</span>
+            </a>
+            <!-- 桌面导航 -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="font-medium hover:text-accent1 transition-custom">首页</a>
+                <a href="courses.html" class="font-medium hover:text-accent1 transition-custom">课程体系</a>
+                <a href="faculty.html" class="font-medium hover:text-accent1 transition-custom">师资力量</a>
+                <a href="works.html" class="font-medium hover:text-accent1 transition-custom">作品展示</a>
+                <a href="employment.html" class="font-medium text-accent1 border-b-2 border-accent1 pb-1">就业保障</a>
+                <a href="contact.html" class="bg-accent1 hover:bg-accent1/90 text-white px-5 py-2 rounded-full transition-custom">预约免费试听</a>
+            </nav>
+            <!-- 移动端菜单按钮 -->
+            <button id="menuBtn" class="md:hidden text-primary text-xl">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <!-- 移动端导航菜单 -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+                <a href="index.html" class="font-medium py-2 hover:text-accent1 transition-custom">首页</a>
+                <a href="courses.html" class="font-medium py-2 hover:text-accent1 transition-custom">课程体系</a>
+                <a href="faculty.html" class="font-medium py-2 hover:text-accent1 transition-custom">师资力量</a>
+                <a href="works.html" class="font-medium py-2 hover:text-accent1 transition-custom">作品展示</a>
+                <a href="employment.html" class="font-medium py-2 text-accent1">就业保障</a>
+                <a href="contact.html" class="bg-accent1 hover:bg-accent1/90 text-white px-5 py-2 rounded-full transition-custom">预约免费试听</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 页面标题 -->
+    <section class="pt-28 pb-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h1 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-center mb-4">就业保障</h1>
+            <div class="w-20 h-1 bg-accent1 mx-auto mb-6"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto text-center">98%就业率，与200+企业合作，从学习到就业全程保驾护航</p>
+        </div>
+    </section>
+
+    <!-- 就业数据 -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="text-4xl font-bold text-accent1 mb-2">98%</div>
+                    <p class="text-gray-600">毕业生就业率</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="text-4xl font-bold text-accent1 mb-2">200+</div>
+                    <p class="text-gray-600">合作企业</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="text-4xl font-bold text-accent1 mb-2">5k+</div>
+                    <p class="text-gray-600">毕业生人数</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="text-4xl font-bold text-accent1 mb-2">8k+</div>
+                    <p class="text-gray-600">平均起薪(元/月)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 就业保障体系 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold mb-12 text-center">全方位就业保障体系</h2>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">企业合作与就业推荐</h3>
+                    <div class="w-20 h-1 bg-accent1 mb-8"></div>
+                    <p class="text-gray-600 mb-6">我们与全国200多家服装企业建立长期合作关系，包括知名品牌、设计公司和生产企业，为学生提供精准就业推荐服务。</p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <div class="bg-accent1/10 p-2 rounded-full mr-4 mt-1 flex-shrink-0">
+                                <i class="fa fa-check text-accent1"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">定向培养计划</h4>
+                                <p class="text-gray-600">与企业合作开发课程，按照企业需求培养专业人才</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-accent1/10 p-2 rounded-full mr-4 mt-1 flex-shrink-0">
+                                <i class="fa fa-check text-accent1"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">校园招聘会</h4>
+                                <p class="text-gray-600">定期举办校园招聘活动，企业HR现场面试</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-accent1/10 p-2 rounded-full mr-4 mt-1 flex-shrink-0">
+                                <i class="fa fa-check text-accent1"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">企业实习机会</h4>
+                                <p class="text-gray-600">为优秀学生提供带薪实习机会，积累工作经验</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="企业招聘会" class="rounded-lg shadow-sm h-64 object-cover">
+                    <img src="https://images.unsplash.com/photo-1557682250-20fbb1956478?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="企业合作签约" class="rounded-lg shadow-sm h-64 object-cover mt-8">
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-md transition-custom">
+                    <div class="bg-accent1/10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-briefcase text-2xl text-accent1"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">职业规划指导</h3>
+                    <p class="text-gray-600">专业职业规划师一对一指导，帮助学生明确职业发展方向，制定个性化职业规划方案。</p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-md transition-custom">
+                    <div class="bg-accent2/10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-file-text-o text-2xl text-accent2"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">简历与面试培训</h3>
+                    <p class="text-gray-600">提供专业简历制作指导和面试技巧培训，模拟面试场景，提升学生求职竞争力。</p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-md transition-custom">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-line-chart text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">创业扶持计划</h3>
+                    <p class="text-gray-600">为有创业意愿的学生提供创业指导、资源对接和资金支持，助力学生实现创业梦想。</p>
+                </div>
+            </div>
+
+            <!-- 合作企业 -->
+            <div>
+                <h3 class="text-2xl font-bold mb-8 text-center">合作企业展示</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-lg flex items-center justify-center h-24 opacity-70 hover:opacity-100 transition-custom">
+                        <span class="text-gray-500 font-bold">企业LOGO</span>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg flex items-center justify-center h-24 opacity-70 hover:opacity-100 transition-custom">
+                        <span class="text-gray-500 font-bold">企业LOGO</span>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg flex items-center justify-center h-24 opacity-70 hover:opacity-100 transition-custom">
+                        <span class="text-gray-500 font-bold">企业LOGO</span>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg flex items-center justify-center h-24 opacity-70 hover:opacity-100 transition-custom">
+                        <span class="text-gray-500 font-bold">企业LOGO</span>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg flex items-center justify-center h-24 opacity-70 hover:opacity-100 transition-custom">
+                        <span class="text-gray-500 font-bold">企业LOGO</span>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg flex items-center justify-center h-24 opacity-70 hover:opacity-100 transition-custom">
+                        <span class="text-gray-500 font-bold">企业LOGO</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 毕业生成功案例 -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold mb-12 text-center">毕业生成功案例</h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-custom">
+                    <div class="p-6">
+                        <div class="flex items-center mb-6">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="毕业生照片" class="w-16 h-16 rounded-full object-cover mr-4">
+                            <div>
+                                <h3 class="text-xl font-bold">陈同学</h3>
+                                <p class="text-accent1">某知名服装品牌设计师</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">2020届服装设计专业毕业生，现任国内某知名女装品牌主设计师，年薪25万+。在校期间曾获得全国服装设计大赛金奖。</p>
+                        <div class="text-sm text-gray-500">毕业时间: 2020年6月</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-custom">
+                    <div class="p-6">
+                        <div class="flex items-center mb-6">
+                            <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="毕业生照片" class="w-16 h-16 rounded-full object-cover mr-4">
+                            <div>
+                                <h3 class="text-xl font-bold">林同学</h3>
+                                <p class="text-accent1">自主创业 - 服装品牌创始人</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">2019届服装制版专业毕业生，毕业后创立个人服装品牌，年销售额突破500万，拥有线上线下门店5家。</p>
+                        <div class="text-sm text-gray-500">毕业时间: 2019年6月</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-custom">
+                    <div class="p-6">
+                        <div class="flex items-center mb-6">
+                            <img src="https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="毕业生照片" class="w-16 h-16 rounded-full object-cover mr-4">
+                            <div>
+                                <h3 class="text-xl font-bold">王同学</h3>
+                                <p class="text-accent1">外资服装企业技术主管</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">2018届服装工艺专业毕业生，现任某外资服装企业技术部主管，负责生产工艺管理，团队规模20人。</p>
+                        <div class="text-sm text-gray-500">毕业时间: 2018年6月</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 咨询区域 -->
+    <section class="py-16 bg-accent2/10">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold mb-6">开启您的服装职业生涯</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-8">加入我们的服装培训课程，享受全方位就业保障服务，让您从学习到就业无缝衔接</p>
+            <a href="contact.html" class="bg-accent1 hover:bg-accent1/90 text-white px-8 py-3 rounded-full font-medium transition-custom inline-block">
+                预约免费试听课程 <i class="fa fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-primary text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <span class="text-accent2 text-2xl"><i class="fa fa-scissors"></i></span>
+                        <span class="text-xl font-bold">未命名服装培训学校</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">培养时尚设计精英人才，对接广深时尚产业带，就业直通名企</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-white/10 hover:bg-accent2 w-10 h-10 rounded-full flex items-center justify-center transition-custom">
+                            <i class="fa fa-weixin"></i>
+                        </a>
+                        <a href="#" class="bg-white/10 hover:bg-accent2 w-10 h-10 rounded-full flex items-center justify-center transition-custom">
+                            <i class="fa fa-weibo"></i>
+                        </a>
+                        <a href="#" class="bg-white/10 hover:bg-accent2 w-10 h-10 rounded-full flex items-center justify-center transition-custom">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-6">快速链接</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-custom">首页</a></li>
+                        <li><a href="courses.html" class="text-gray-400 hover:text-white transition-custom">课程体系</a></li>
+                        <li><a href="faculty.html" class="text-gray-400 hover:text-white transition-custom">师资力量</a></li>
+                        <li><a href="works.html" class="text-gray-400 hover:text-white transition-custom">作品展示</a></li>
+                        <li><a href="employment.html" class="text-gray-400 hover:text-white transition-custom">就业保障</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-6">联系我们</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fa fa-map-marker text-accent2 mt-1 mr-3"></i>
+                            <span class="text-gray-400">广东省广州市越秀区东风中路305号</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-phone text-accent2 mr-3"></i>
+                            <span class="text-gray-400">400-123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-envelope text-accent2 mr-3"></i>
+                            <span class="text-gray-400">info@example.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 mb-4 md:mb-0">© 2023 未命名服装培训学校. 保留所有权利.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-custom">隐私政策</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-custom">使用条款</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-custom">网站地图</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
